@@ -1,0 +1,46 @@
+site_name: Municipal-Indicators
+site_description: Reproduzierbare Berechnung kommunaler Nachhaltigkeitsindikatoren für den Landkreis Regen
+site_url: https://turtelll.github.io/Municipal-Indicators/
+repo_url: https://github.com/Turtelll/Municipal-Indicators
+repo_name: Turtelll/Municipal-Indicators
+copyright: Benedikt Vogl
+
+docs_dir: docs
+
+theme:
+  name: material
+  language: de
+  features:
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Zum Dunkelmodus wechseln
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Zum Hellmodus wechseln
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Start: index.md
+  - Installation: setup.md
+  - Pipeline: pipeline.md
+  - Indikatoren: indikatoren.md
+  - Datenquellen: daten.md

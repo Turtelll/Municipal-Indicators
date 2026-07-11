@@ -1,0 +1,11 @@
+# MkDocs build output (wird von GitHub Actions gebaut, nicht committen)
+site/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE
+.idea/
