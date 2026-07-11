@@ -15,7 +15,7 @@ erzeugt werden.
 - **Koordinatensystem:** EPSG:25832 (UTM 32N)
 - **Ablauf:** `download → ingest → analyse → plot`
 
-## Nächste Schritte
+## Inhalt
 
 - [Installation](setup.md) — Umgebung einrichten und Abhängigkeiten installieren
 - [Pipeline](pipeline.md) — die vier Stufen ausführen
