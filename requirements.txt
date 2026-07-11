@@ -1,10 +1,23 @@
+# Dokumentation (MkDocs-Site)
 mkdocs==1.6.1
 mkdocs-material==9.5.49
 
+# Geodaten: Einlesen, Reprojektion, Zuschnitt
 geopandas>=1.1.4
+shapely>=2.1.2
+pyogrio>=0.13.0
 osmnx>=2.1.0
 requests>=2.33.1
 
+# Datenverarbeitung
 pandas~=3.0.3
+numpy>=2.4.4
 networkx~=3.6.1
 scipy>=1.18.0
+
+# Visualisierung (Karten & Tabellen)
+matplotlib>=3.10.9
+
+# Download-Stufe: Marktstammdatenregister (MaStR)
+open_mastr>=0.17.1
+sqlalchemy>=2.0.51
