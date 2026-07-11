@@ -6,6 +6,8 @@ Geo- und Fachdaten herunter, harmonisiert sie auf ein gemeinsames Koordinaten­s
 (**EPSG:25832 / UTM 32N**) und berechnet je Gemeinde sechs Indikatoren, aus denen
 Choroplethen­karten und Tabellen für den Bericht erzeugt werden.
 
+**Dokumentation:** <https://turtelll.github.io/Municipal-Indicators/>
+
 ## Indikatoren
 
 | Indikator | Einheit | Quelle |
