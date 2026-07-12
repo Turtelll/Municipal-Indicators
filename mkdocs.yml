@@ -3,7 +3,7 @@ site_description: Reproduzierbare Berechnung kommunaler Nachhaltigkeitsindikator
 site_url: https://turtelll.github.io/Municipal-Indicators/
 repo_url: https://github.com/Turtelll/Municipal-Indicators
 repo_name: Turtelll/Municipal-Indicators
-copyright: Benedikt Vogl
+copyright: Benedikt Vogl, Stephan Limmer
 
 docs_dir: docs
 

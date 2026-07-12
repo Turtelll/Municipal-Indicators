@@ -29,7 +29,7 @@ Gültige Stufennamen: `download`, `ingest`, `analyse`, `plot`.
    den Landkreis zu und prüft die AGS-Schlüssel aller Quellen auf Deckungsgleichheit.
 3. **analyse** — berechnet die sechs Indikatoren je Gemeinde und schreibt sie nach
    `outputs/tables/indikatoren_regen.gpkg`.
-4. **plot** — erzeugt Übersichtskarte, Indikatoren-Panel und Ergebnistabelle.
+4. **plot** — erzeugt Übersichtskarte, Indikatoren-Panel, die Verbesserungspotenzial-Heatmap sowie Indikatoren-, Stammdaten- und Zwischengrößentabelle
 
 !!! tip "Ergebnis in QGIS ansehen"
     Das GeoPackage `outputs/tables/indikatoren_regen.gpkg` lässt sich direkt in

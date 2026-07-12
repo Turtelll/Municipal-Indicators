@@ -83,6 +83,10 @@ Vermessungsverwaltung / Landesamt für Digitalisierung, Breitband und Vermessung
 Nationalpark, FFH-Gebiet, Vogelschutzgebiet, Landschaftsschutzgebiet, flächige
 Landschaftsbestandteile und Naturdenkmale); leere Kategorien werden übersprungen. In
 den Naturschutzflächenanteil gehen sieben flächig belegte Kategorien ein.
+Der Layer *Naturpark* wird bewusst nicht abgefragt: Der Naturpark Bayerischer Wald
+überzieht rund 89 % der Kreisfläche und würde den Indikator für nahezu jede Gemeinde
+sättigen. Nationales Naturmonument und Biosphärenreservat liefern im
+Untersuchungsgebiet keine Flächen und entfallen daher.
 
 **Bezug.** Automatisch über den **WFS 2.0** des Bayerischen Landesamts für Umwelt
 (`lfu.bayern.de/gdi/wfs/natur/schutzgebiete`). Jede Kategorie wird über die

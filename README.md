@@ -12,11 +12,11 @@ Choroplethen­karten und Tabellen für den Bericht erzeugt werden.
 
 | Indikator | Einheit | Quelle |
 |---|---|---|
-| Bebauungsdichte | % | OSM-Gebäude, ATKIS-Siedlungsfläche |
-| Naturschutzflächenanteil | % | Schutzgebiete (WFS) |
-| Ø Netzwerkdistanz Grundversorgung | m | OSM-POI, OSM-Straßennetz |
-| ÖPNV-Erschließungsgrad | % | OSM-Haltestellen |
-| EE-Ausbaugrad | kW/EW | Marktstammdatenregister (MaStR) |
+| Bebauungsdichte | % | ATKIS Basis-DLM (Siedlungs- und Verkehrsfläche), VG250-EW (Gemeindefläche) |
+| Naturschutzflächenanteil | % | LfU Bayern – Schutzgebiete (WFS), VG250-EW (Gemeindefläche) |
+| Ø Netzwerkdistanz Grundversorgung | m | OSM-Gebäude, OSM-POI, OSM-Straßennetz |
+| ÖPNV-Erschließungsgrad | % | OSM-Haltestellen, ATKIS Basis-DLM (Siedlungsfläche) |
+| EE-Ausbaugrad | kW/EW | Marktstammdatenregister (MaStR), VG250-EW (Einwohner) |
 | Ausschöpfung PV-Dachpotenzial | % | Energie-Atlas Bayern, MaStR |
 
 ## Voraussetzungen
@@ -74,7 +74,7 @@ Gültige Stufennamen: `download`, `ingest`, `analyse`, `plot`.
 3. **analyse:** berechnet die sechs Indikatoren je Gemeinde und schreibt sie nach
    `outputs/tables/indikatoren_regen.gpkg`. Dieses GeoPackage lässt sich direkt in
    **QGIS** öffnen und dort weiter erkunden (Attributtabelle, eigene Klassifizierung).
-4. **plot:** erzeugt Übersichtskarte, Indikatoren-Panel und Ergebnistabelle.
+4. **plot:** erzeugt Übersichtskarte, Indikatoren-Panel, die Verbesserungspotenzial-Heatmap sowie Indikatoren-, Stammdaten- und Zwischengrößentabelle
 
 ## Verzeichnisstruktur
 
