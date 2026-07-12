@@ -68,10 +68,15 @@ def compute_pv_dachausschoepfung(boundaries) -> tuple[pd.DataFrame, pd.DataFrame
         n = int((ausschoepfung > ZIELWERT_PROZENT).sum())
         print(f"  WARNING: {n} Gemeinde(n) ueber 100 % - Zaehler/Nenner-Scope pruefen")
 
+    perzentil = ausschoepfung.rank(pct=True) * 100
+    restpotenzial = (potenzial - installiert).clip(lower=0)
+
     indicator_df = pd.DataFrame({
         "pv_dach_installiert_kw": installiert.round(1),
         "pv_dach_potenzial_kw": potenzial.round(0),
+        "pv_dach_restpotenzial_kw": restpotenzial.round(0),
         "pv_dach_ausschoepfung_prozent": ausschoepfung.round(2),
+        "pv_dach_ausschoepfung_perzentil": perzentil.round(1),
     })
     indicator_df.index.name = GEMEINDE_KEY
     return indicator_df, atlas
