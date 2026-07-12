@@ -16,9 +16,11 @@ pip install -r requirements.txt
 ```
 
 !!! note "Warum eine virtuelle Umgebung?"
-    Die Abhängigkeiten sind eng gepinnt (u. a. `pandas~=3.0.3`). Eine virtuelle
-    Umgebung hält diese Versionen vom übrigen System fern und macht die Umgebung
-    exakt aus `requirements.txt` reproduzierbar.
+    In `requirements.txt` sind für alle Abhängigkeiten getestete Mindestversionen
+    festgehalten, einzelne Kernpakete (u. a. `pandas~=3.0.3`) sind eng gepinnt.
+    Eine virtuelle Umgebung hält diese Versionen vom übrigen System fern und
+    stellt sicher, dass die Pipeline mit einer definierten, nachvollziehbaren
+    Umgebung läuft.
 
 ## Nur die Dokumentation bauen
 

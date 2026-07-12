@@ -6,11 +6,11 @@ zusammengeführt.
 
 | Indikator | Einheit | Quelle | Spalte im GeoPackage |
 |---|---|---|---|
-| Bebauungsdichte | % | OSM-Gebäude, ATKIS-Siedlungsfläche | `bebauungsdichte` |
-| Naturschutzflächenanteil | % | Schutzgebiete (WFS) | `naturschutzflaechenanteil` |
-| Ø Netzwerkdistanz Grundversorgung | m | OSM-POI, OSM-Straßennetz | `netzwerkdistanz_grundversorgung` |
-| ÖPNV-Erschließungsgrad | % | OSM-Haltestellen | `oepnv_erschliessungsgrad_prozent` |
-| EE-Ausbaugrad | kW/EW | Marktstammdatenregister (MaStR) | `ee_ausbaugrad_kw_ew` |
+| Bebauungsdichte | % | ATKIS Basis-DLM (Siedlungs- und Verkehrsfläche), VG250-EW (Gemeindefläche) | `bebauungsdichte` |
+| Naturschutzflächenanteil | % | LfU Bayern – Schutzgebiete (WFS), VG250-EW (Gemeindefläche) | `naturschutzflaechenanteil` |
+| Ø Netzwerkdistanz Grundversorgung | m | OSM-Gebäude, OSM-POI, OSM-Straßennetz | `netzwerkdistanz_grundversorgung` |
+| ÖPNV-Erschließungsgrad | % | OSM-Haltestellen, ATKIS Basis-DLM (Siedlungsfläche) | `oepnv_erschliessungsgrad_prozent` |
+| EE-Ausbaugrad | kW/EW | Marktstammdatenregister (MaStR), VG250-EW (Einwohner) | `ee_ausbaugrad_kw_ew` |
 | Ausschöpfung PV-Dachpotenzial | % | Energie-Atlas Bayern, MaStR | `pv_dach_ausschoepfung_prozent` |
 
 !!! note "Bebauungsdichte"
