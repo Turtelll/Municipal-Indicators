@@ -75,12 +75,15 @@ def compute_oepnv_erschliessungsgrad(boundaries: gpd.GeoDataFrame) -> pd.DataFra
     if (ratio_pct > 100.001).any():
         print("  WARNING: Anteil ueber 100 % - Ueberlappung im Einzugsbereich pruefen")
 
+    perzentil = ratio_pct.rank(pct=True) * 100
+
     print(f"\nMedian: {ratio_pct.median():.1f} %, Spannweite {ratio_pct.min():.1f}-{ratio_pct.max():.1f} %")
 
     indicator_df = pd.DataFrame({
         "oepnv_siedlungsflaeche_km2": (siedlung_m2 / 1e6).round(2),
         "oepnv_erschlossen_km2": (erschlossen_m2 / 1e6).round(2),
         "oepnv_erschliessungsgrad_prozent": ratio_pct.round(1),
+        "oepnv_erschliessungsgrad_perzentil": perzentil.round(1),
     })
     indicator_df.index.name = GEMEINDE_KEY
     return indicator_df

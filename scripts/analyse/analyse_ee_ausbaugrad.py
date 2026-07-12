@@ -38,12 +38,14 @@ def compute_ee_ausbaugrad(boundaries) -> pd.DataFrame:
         raise ValueError("Einwohnerzahl <= 0 - Normierung nicht moeglich")
 
     indikator = (leistung / einwohner).rename("ee_ausbaugrad_kw_ew")
+    perzentil = indikator.rank(pct=True) * 100
     print(f"Median: {indikator.median():.3f} kW/EW, "
           f"Spannweite {indikator.min():.2f}-{indikator.max():.2f} kW/EW")
 
     indicator_df = pd.DataFrame({
         "ee_leistung_kw": leistung.round(1),
         "ee_ausbaugrad_kw_ew": indikator.round(4),
+        "ee_ausbaugrad_perzentil": perzentil.round(1),
     })
     indicator_df.index.name = GEMEINDE_KEY
     return indicator_df
