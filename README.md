@@ -76,6 +76,9 @@ Gültige Stufennamen: `download`, `ingest`, `analyse`, `plot`.
    **QGIS** öffnen und dort weiter erkunden (Attributtabelle, eigene Klassifizierung).
 4. **plot:** erzeugt Übersichtskarte, Indikatoren-Panel, die Verbesserungspotenzial-Heatmap sowie Indikatoren-, Stammdaten- und Zwischengrößentabelle
 
+#### Beispiel Analyse am Landkreis Regen
+![Alt text](outputs/maps/abb2_panel_indikatoren.png)
+
 ## Verzeichnisstruktur
 
 ```
